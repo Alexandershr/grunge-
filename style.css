@@ -1,0 +1,103 @@
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(to right, #f0e6d6, #ac8617);
+}
+
+header {
+  background: linear-gradient(to right, #49022b, #9b287b);
+  color: #FFD700;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #FFD700;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hero {
+  background: linear-gradient(to right, #f4f4f4, #ea9e6a);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.btn {
+  background: linear-gradient(to right, #47022a, #9b287b);
+  color: #b19d28;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+.product-display {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.guitar-item {
+  flex-basis: 30%;
+  margin: 10px;
+  text-align: center;
+}
+
+.guitar-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+footer {
+  background: linear-gradient(to right, #47012a, #9b287b);
+  color: #f5ebb5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #FFD700;
+  text-decoration: none;
+}
+.guitar-image {
+  transition: transform .2s; /* Animation */
+}
+
+.guitar-image:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.buy-now-btn,
+.add-to-cart-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: linear-gradient(to right, #4e4e4e, #7a00cc);
+  transition: background 0.3s ease;
+}
+
+.buy-now-btn:hover,
+.add-to-cart-btn:hover {
+  background: linear-gradient(to right, #7a00cc, #4e4e4e);
+}

@@ -1,8 +1,21 @@
+/* Set the default font and background gradient for the body */
 body {
-  font-family: cursive;
+  font-family: 'Times New Roman', serif;
   background: linear-gradient(to right, #f0e6d6, #ac8617);
 }
 
+/* Define the keyframes for the golden flash animation */
+@keyframes goldenFlash {
+  from { background-color: #FFD700; }
+  to { background-color: transparent; }
+}
+
+/* Apply the golden flash animation to elements with the .flash-golden class */
+.flash-golden {
+  animation: goldenFlash 0.5s ease-out forwards;
+}
+
+/* Style the header with a gradient background and golden text */
 header {
   background: linear-gradient(to right, #49022b, #9b287b);
   color: #FFD700;
@@ -10,24 +23,45 @@ header {
   text-align: center;
 }
 
+/* Center the search container */
+.search-container {
+  text-align: center;
+}
+
+/* Style the search bar with padding and width */
+.search-bar {
+  padding: 5px;
+  width: 400px;
+  margin-right: 67px;
+}
+
+/* Style the search button with padding */
+.search-button {
+  padding: 5px 10px;
+}
+
+/* Style the navigation links with golden color and spacing */
 nav a {
   color: #FFD700;
   margin: 0 10px;
   text-decoration: none;
 }
 
+/* Style the logo with size and rounded corners */
 .logo {
   width: 100px;
   height: auto;
   border-radius: 50%;
 }
 
+/* Style the hero section with a gradient background and padding */
 .hero {
   background: linear-gradient(to right, #f4f4f4, #ea9e6a);
   padding: 50px 0;
   text-align: center;
 }
 
+/* Style buttons with a gradient background, color, and border radius */
 .btn {
   background: linear-gradient(to right, #47022a, #9b287b);
   color: #b19d28;
@@ -37,6 +71,7 @@ nav a {
   border-radius: 12px;
 }
 
+/* Create a flex container for product display with wrapping */
 .product-display {
   display: flex;
   justify-content: space-around;
@@ -44,18 +79,21 @@ nav a {
   padding: 20px;
 }
 
+/* Style individual guitar items with width, margin, and center alignment */
 .guitar-item {
   flex-basis: 30%;
   margin: 10px;
   text-align: center;
 }
 
+/* Style guitar images with full width, auto height, and rounded corners */
 .guitar-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
 }
 
+/* Style the footer with a gradient background, color, and padding */
 footer {
   background: linear-gradient(to right, #47012a, #9b287b);
   color: #f5ebb5;
@@ -63,27 +101,34 @@ footer {
   text-align: center;
 }
 
+/* Remove default list styling for social links and reset padding */
 .social-links {
   list-style: none;
   padding: 0;
 }
 
+/* Display social link items inline with spacing */
 .social-links li {
   display: inline;
   margin: 0 10px;
 }
 
+/* Style social link anchors with golden color and no text decoration */
 .social-links a {
   color: #FFD700;
   text-decoration: none;
 }
+
+/* Add a zoom effect on hover for guitar images */
 .guitar-image {
   transition: transform .2s; /* Animation */
 }
 
 .guitar-image:hover {
-  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.1); /* Zoom effect on hover */
 }
+
+/* Style the buy now and add to cart buttons with background, color, and transitions */
 .buy-now-btn,
 .add-to-cart-btn {
   display: inline-block;
@@ -97,7 +142,43 @@ footer {
   transition: background 0.3s ease;
 }
 
+/* Change the background gradient on hover for buttons */
 .buy-now-btn:hover,
 .add-to-cart-btn:hover {
   background: linear-gradient(to right, #7a00cc, #4e4e4e);
+}
+
+/* Style the search bar container with flexbox, color, and padding */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(112, 0, 112, 0.783);
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 8px; 
+  width: 150px;
+}
+
+/* Style the search input field with flex growth and no border */
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Style the search button with transparent background and golden color */
+.search-bar button {
+  background-color: transparent;
+  color: gold;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Style the icon inside the search button */
+.search-bar button i {
+  font-size: 16px;
 }

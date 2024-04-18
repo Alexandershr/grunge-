@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding for the HTML document -->
   <meta charset="UTF-8">
+  <!-- Viewport settings for responsive design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title of the webpage -->
   <title>Your Guitar Shop - Premium Instruments</title>
+  <!-- Link to the main stylesheet -->
   <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Link to the Font Awesome icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Favicon of the website -->
+  <link rel="icon" type="image/png" href="grunge.png">
 </head>
 <body>
+  <!-- Header section of the webpage -->
   <header>
+    <!-- Navigation bar with links to other pages-->
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="product.html">Products</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <img src="grunge.png" alt="Guitar Shop Logo" class="logo">
+    <!-- Logo of the guitar shop -->
+    <img src="grunge.png" alt="Guitar Shop Logo" class="logo"><br>
+    <!-- Search bar for finding products -->
+    <div class="search-bar">
+      <!-- Input field for search queries -->
+      <input type="text" id="search" placeholder="Search...">
+      <!-- Button to initiate the search -->
+      <button type="button" onclick="filterGuitarNames()">
+        <!-- Search icon -->
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
   </header>
 
-  <main>
-    <h1>Featured Guitars</h1>
-    <section class="hero">
-      <h2>Strum Up Your Dreams: Premium Guitars for Every Player</h2>
-      <p>Handcrafted instruments for beginners and professionals alike.</p>
-      <a href="product.html" class="btn">Shop Guitars Now</a>
-    </section>
+<!-- Main content area -->
+<main>
+  <!-- Section heading for featured guitars -->
+  <h1>Featured Guitars</h1>
+  
+  <!-- Hero section with a promotional message -->
+  <section class="hero">
+    <!-- Subheading with a catchy phrase -->
+    <h2>Strum Up Your Dreams: Premium Guitars for Every Player</h2>
+    <!-- Description of the product offerings -->
+    <p>Handcrafted instruments for beginners and professionals alike.</p>
+    <!-- Call-to-action button for shopping guitars -->
+    <a href="product.html" class="btn">Shop Guitars Now</a>
+  </section>
 
-    <section class="product-display">
-      <div class="guitar-item">
-        <img src="https://imgs.search.brave.com/2M4B47aTThbKp1loi4hk1cM5UHK5RRxoDBLMIZ1zWLk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdHVm/Zi5mZW5kZXJnYXJh/Z2UuY29tL2ltYWdl/cy9iL2YvTC9TdHJh/dF9UaWxlX0hQU192/MkAyeC5qcGc" alt="Guitar Model 1" class="guitar-image">
-        <h3><a href="product.html">Fender</a></h3>
-      </div>
+  <!-- Section displaying individual guitar products -->
+  <section class="product-display">
+    <!-- Individual guitar item container -->
+    <div class="guitar-item">
+      <!-- Image of the guitar model -->
+      <img src="https://imgs.search.brave.com/2M4B47aTThbKp1loi4hk1cM5UHK5RRxoDBLMIZ1zWLk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdHVm/Zi5mZW5kZXJnYXJh/Z2UuY29tL2ltYWdl/cy9iL2YvTC9TdHJh/dF9UaWxlX0hQU192/MkAyeC5qcGc" alt="Guitar Model 1" class="guitar-image">
+      <!-- Product name with a link to its page -->
+      <h3><a href="product.html">Fender</a></h3>
+    </div>
 
-      <div class="guitar-item">
-        <img src="https://imgs.search.brave.com/z7YAXrdr9EG0KdLmUihmo9N3WcYznvgtUK-hTQOs-lI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjQ2/NzI0ODM2L3Bob3Rv/L2EtZ2lic29uLWxl/cy1wYXVsLTYwLXJl/aXNzdWUtYW5kLWdp/YnNvbi1sZXMtcGF1/bC01OS1yZWlzc3Vl/LWVsZWN0cmljLWd1/aXRhci10YWtlbi1v/bi1tYXktMjMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWgy/bGt2UFk0Nl9PQVFi/OTR4clIxTXFVS3B1/S3lidE1IcTBpVkRT/elZCWlk9" alt="Guitar Model 2" class="guitar-image">
-        <h3><a href="product.html">Gibson Les Paul</a></h3>
-      </div>
-      <div class="guitar-item">
-        <img src="https://imgs.search.brave.com/iwSRwYc7u__5FbdwNNAnnplXMss7_dDKZhw2TrSwTKs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWl0/YXJwYXJhZGlzZS5j/b20uYXUvY2RuL3No/b3AvZmlsZXMvcmdy/LWdpby0xLmpwZz92/PTE2OTI5MjE4Njcm/d2lkdGg9NTMz" alt="Guitar Model 3" class="guitar-image">
-        <h3><a href="product.html">Ibanez RG</a></h3>
-      </div>
-      
+    <!-- Individual guitar item container -->
+    <div class="guitar-item">
+      <!-- Image of the guitar model -->
+      <img src="https://imgs.search.brave.com/z7YAXrdr9EG0KdLmUihmo9N3WcYznvgtUK-hTQOs-lI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNjQ2/NzI0ODM2L3Bob3Rv/L2EtZ2lic29uLWxl/cy1wYXVsLTYwLXJl/aXNzdWUtYW5kLWdp/YnNvbi1sZXMtcGF1/bC01OS1yZWlzc3Vl/LWVsZWN0cmljLWd1/aXRhci10YWtlbi1v/bi1tYXktMjMuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPWgy/bGt2UFk0Nl9PQVFi/OTR4clIxTXFVS3B1/S3lidE1IcTBpVkRT/elZCWlk9" alt="Guitar Model 2" class="guitar-image">
+      <!-- Product name with a link to its page -->
+      <h3><a href="product.html">Gibson Les Paul</a></h3>
+    </div>
+
+    <!-- Individual guitar item container -->
+    <div class="guitar-item">
+      <!-- Image of the guitar model -->
+      <img src="https://imgs.search.brave.com/iwSRwYc7u__5FbdwNNAnnplXMss7_dDKZhw2TrSwTKs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWl0/YXJwYXJhZGlzZS5j/b20uYXUvY2RuL3No/b3AvZmlsZXMvcmdy/LWdpby0xLmpwZz92/PTE2OTI5MjE4Njcm/d2lkdGg9NTMz" alt="Guitar Model 3" class="guitar-image">
+      <!-- Product name with a link to its page -->
+      <h3><a href="product.html">Ibanez RG</a></h3>
+    </div>
+
       <div class="guitar-item">
         <img src="https://imgs.search.brave.com/iVBtOg8fp1VRKe53T7ss_Quc10xLdr14tOhbJiHsT2c/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ydmIt/aW1nLnJldmVyYi5j/b20vaW1hZ2UvdXBs/b2FkL3MtLW0tU2Rp/eWhpLS0vZl9hdXRv/LHRfbGFyZ2UvdjE2/Mjk2NjE3MzUvYndr/MTRsaW5ybnF5bDlk/anNyczguanBn" alt="Fender Classic Series 72 Telecaster Deluxe Electric Guitar" class="guitar-image">
         <h3><a href="product.html">Fender Classic Series 72 Telecaster Deluxe Electric Guitar</a></h3>
@@ -63,7 +101,7 @@
       
       
       <div class="guitar-item">
-        <img src="https://imgs.search.brave.com/egBYW_Bl2jK3e6g3U9g5hVvXQOti-_SbIQo6RY4xCo4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAy/MzAvOTE2NC8yNDQ4/L2ZpbGVzLzE5Njgt/R2lic29uLUxlcy1Q/YXVsLUN1c3RvbS0x/MS5qcGc_dj0xNjI0/NjM1ODcx" alt="Epiphone 1959 Les Paul Standard" class="guitar-image">
+        <img src="https://imgs.search.brave.com/U_6BXAn9zxmjgTtCt8OGT8xK1Dz1ExhkHyuI57r3zf4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWl0/YXIuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzAzL0Vw/aXBob25lLUxlcy1Q/YXVsLVN0YW5kYXJk/LTUwcy1Cb2R5MkAx/MTM5eDE3MDcuanBn" alt="Epiphone 1959 Les Paul Standard" class="guitar-image">
         <h3><a href="product.html">Epiphone 1959 Les Paul Standard</a></h3>
       </div>
       
@@ -97,18 +135,39 @@
     </section>
   </main>
 <br>
-  <footer>
-    <p>© [Grunge] - All Rights Reserved.</p>
-    <ul class="social-links">
-      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-    </ul>
-  </footer>
-<!-- JavaScript Files -->
-<script src="script.js"></script>
+<!-- Footer section of the page -->
+<footer>
+  <!-- Copyright statement with a placeholder for the brand name -->
+  <p>© [Grunge] - All Rights Reserved.</p>
+  <!-- Unordered list for social media links -->
+  <ul class="social-links">
+    <!-- List item for Facebook link -->
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <!-- List item for Twitter link -->
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <!-- List item for Instagram link -->
+    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+</footer>
 
+<!-- Reference to an external JavaScript file -->
+<script src="script.js"></script>
+<!-- Inline JavaScript for dynamic content -->
+<script>
+// Function to run when the window has finished loading
+window.onload = function() {
+  // Retrieve the element intended to display the list of guitars
+  var div = document.getElementById('guitar-list');
+  // Iterate over each guitar in the array
+  for (var i = 0; i < guitars.length; i++) {
+    // Create a new paragraph element for each guitar
+    var p = document.createElement('p');
+    // Set the content of the paragraph to include the guitar's name and price
+    p.innerHTML = guitars[i].name + ' - ' + guitars[i].price;
+    // Add the paragraph to the page within the 'guitar-list' element
+    div.appendChild(p);
+  }
+};
+</script>
   </body>
 </html>
-
-
